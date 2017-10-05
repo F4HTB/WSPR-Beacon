@@ -80,6 +80,7 @@ void correctFreqSI() {
     CorectFlagCycle = true;
     si5351.set_correction(calfact);
     si5351.set_freq(250000000ULL, SI5351_CLK2);
+	measdif_old = 2147483647;
   }
   else {
     CorectFlagCycle = false;
